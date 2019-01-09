@@ -49,7 +49,7 @@ export default class BunyanLogger extends PrivateService {
 
     this._logger = bunyan.createLogger({
       name: 'makerdao',
-      level: 'debug',
+      level: 'info',
       serializers: { err: bunyan.stdSerializers.err },
       client: _guid()
     });
